@@ -1,227 +1,282 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    --bg-color: #EDF2FF;
-    --bg-card: #212430;
-    --text-color: #EDF2FF;
-    --bg-yt: red;
-    --border-yt: transparent;
-    --bg-insta: #e20c70;
-    --border-yt: transparent;
-    --bg-tt: #00a2ed;
-    --border-tt: transparent;
-    --bg-github: #FFF;
-    --border-github: transparent;
-    --text-github: #000;
-    --avatar-border: #EDF2FF;
-  }
-  body.dark-theme {
-    --bg-color: #212430;
-    --bg-card: #161718;
-    --text-color: #EDF2FF;
-    --bg-yt: red;
-    --border-yt: transparent;
-    --bg-insta: #e20c70;
-    --border-insta: transparent;
-    --bg-tt: #00a2ed;
-    --border-tt: transparent;
-    --bg-github: #FFF;
-    --border-github: transparent;
-    --text-github: #000;
-    --avatar-border: #212430;
-  }
-  body.yt-theme {
-    --bg-color: #FF3333;
-    --bg-card: #212430;
-    --bg-yt: red;
-    --border-yt: red;
-    --bg-insta: transparent;
-    --border-insta: #e20c70;
-    --bg-tt: transparent;
-    --border-tt: #00a2ed;
-    --bg-github: transparent;
-    --border-github: #000;
-    --text-github: #000;
-    --avatar-border: #FF3333;
-  }
-  body.insta-theme {
-    --bg-color: #e20c70;
-    --bg-card: #161718;
-    --bg-yt: transparent;
-    --border-yt: red;
-    --bg-insta: #e20c70;
-    --border-insta: #e20c70;
-    --bg-tt: transparent;
-    --border-tt: #00a2ed;
-    --bg-github: transparent;
-    --border-github: #000;
-    --text-github: #000;
-    --avatar-border: #e20c70;
-  }
-  body.tt-theme {
-    --bg-color: #00a2ed;
-    --bg-card: #212430;
-    --bg-yt: transparent;
-    --border-yt: red;
-    --bg-insta: transparent;
-    --border-insta: #e20c70;
-    --bg-tt: #00a2ed;
-    --border-tt: #00a2ed;
-    --bg-github: transparent;
-    --border-github: #000;
-    --text-github: #000;
-    --avatar-border: #00a2ed;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  }
-  body.github-theme {
-    --bg-color: #080808;
-    --bg-card: #212430;
-    --bg-yt: transparent;
-    --border-yt: red;
-    --bg-insta: transparent;
-    --border-insta: #e20c70;
-    --bg-tt: transparent;
-    --border-tt: #00a2ed;
-    --bg-github: #FFF;
-    --border-github: transparent;
-    --text-github: #000;
-    --avatar-border: #080808;
+html {
+  --bg-color: #EDF2FF;
+  --bg-card: #212430;
+  --text-color: #EDF2FF;
+  --bg-yt: red;
+  --border-yt: transparent;
+  --bg-insta: #e20c70;
+  --border-yt: transparent;
+  --bg-tt: #00a2ed;
+  --border-tt: transparent;
+  --bg-github: #FFF;
+  --border-github: transparent;
+  --text-github: #000;
+  --avatar-border: #EDF2FF;
+}
 
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  body {
-    background: var(--bg-color);
-    color: var(--text-color);
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  .container {
-    background: var(--bg-card);
-    padding: 20px 30px;
-    border-radius: 3px;
-    box-shadow: 0 0 10px black;
-    text-align: center;
-    width: 300px;
-    margin: 60px auto;
-  }
-  
-  img {
-    width: 100%;
-  }
-  
-  img.avatar {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    padding: 4px;
-    border: 4px var(--avatar-border) solid;
-    transition: 200ms;
-  }
-  
-  img.avatar:hover {
-    padding: 0;
-    border: 2px transparent dotted;
-    transition: 200ms;
-  }
-  
-  h1 {
-    font-size: 32px;
-    margin-top: 24px;
-    margin-bottom: 8px;
-  }
-  
-  .username {
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 400;
-    opacity: 0.8;
-    font-size: 18px;
-  }
-  
-  ul {
-    list-style: none;
-    margin: 48px 0;
-  }
-  
-  ul li a {
-    height: 53px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #48cbf4;
-    color: #212430;
-    text-transform: uppercase;
-    font-size: 14px;
-  
-    margin-bottom: 16px;
-    border-radius: 12px;
-  
-    transition: 400ms;
-  }
-  
-  ul li a:hover {
-    background: #27839f;
-    color: #EDF2FF;
-  }
-  
+body.dark-theme {
+  --bg-color: #212430;
+  --bg-card: #161718;
+  --text-color: #EDF2FF;
+  --bg-yt: red;
+  --border-yt: transparent;
+  --bg-insta: #e20c70;
+  --border-insta: transparent;
+  --bg-tt: #00a2ed;
+  --border-tt: transparent;
+  --bg-github: #FFF;
+  --border-github: transparent;
+  --text-github: #000;
+  --avatar-border: #212430;
+}
+
+body.yt-theme {
+  --bg-color: #FF3333;
+  --bg-card: #212430;
+  --bg-yt: red;
+  --border-yt: red;
+  --bg-insta: transparent;
+  --border-insta: #e20c70;
+  --bg-tt: transparent;
+  --border-tt: #00a2ed;
+  --bg-github: transparent;
+  --border-github: #000;
+  --text-github: #000;
+  --avatar-border: #FF3333;
+}
+
+body.insta-theme {
+  --bg-color: #e20c70;
+  --bg-card: #161718;
+  --bg-yt: transparent;
+  --border-yt: red;
+  --bg-insta: #e20c70;
+  --border-insta: #e20c70;
+  --bg-tt: transparent;
+  --border-tt: #00a2ed;
+  --bg-github: transparent;
+  --border-github: #000;
+  --text-github: #000;
+  --avatar-border: #e20c70;
+}
+
+body.tt-theme {
+  --bg-color: #00a2ed;
+  --bg-card: #212430;
+  --bg-yt: transparent;
+  --border-yt: red;
+  --bg-insta: transparent;
+  --border-insta: #e20c70;
+  --bg-tt: #00a2ed;
+  --border-tt: #00a2ed;
+  --bg-github: transparent;
+  --border-github: #000;
+  --text-github: #000;
+  --avatar-border: #00a2ed;
+
+}
+
+body.github-theme {
+  --bg-color: #080808;
+  --bg-card: #212430;
+  --bg-yt: transparent;
+  --border-yt: red;
+  --bg-insta: transparent;
+  --border-insta: #e20c70;
+  --bg-tt: transparent;
+  --border-tt: #00a2ed;
+  --bg-github: #FFF;
+  --border-github: transparent;
+  --text-github: #000;
+  --avatar-border: #080808;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  background: var(--bg-card);
+  padding: 20px 30px;
+  border-radius: 3px;
+  box-shadow: 0 0 10px black;
+  text-align: center;
+  width: 300px;
+  margin: 60px auto;
+}
+
+img {
+  width: 100%;
+}
+
+img.avatar {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 4px;
+  border: 4px var(--avatar-border) solid;
+  transition: 200ms;
+}
+
+img.avatar:hover {
+  padding: 0;
+  border: 2px transparent dotted;
+  transition: 200ms;
+}
+
+h1 {
+  font-size: 32px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.username {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+  margin: 48px 0;
+}
+
+ul li a {
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #48cbf4;
+  color: #212430;
+  text-transform: uppercase;
+  font-size: 14px;
+
+  margin-bottom: 16px;
+  border-radius: 12px;
+
+  transition: 400ms;
+}
+
+ul li a:hover {
+  background: #27839f;
+  color: #EDF2FF;
+}
+
+.link-youtube {
+  background: var(--bg-yt);
+  color: #EDF2FF;
+  border: 1px var(--border-yt) solid;
+  background-position-x: -50px;
+  background-position-y: center;
+}
+
+.link-youtube:hover {
+  background: red url("https://www.youtube.com/s/desktop/1422277c/img/favicon_96x96.png") no-repeat;
+  border: 0 transparent solid;
+  background-size: contain;
+  background-position-y: center;
+}
+
+.link-insta {
+  background: url("https://static.cdninstagram.com/rsrc.php/v3/y0/r/1RQf-TYXzi3.png") no-repeat;
+  background: var(--bg-insta);
+  color: #EDF2FF;
+  border: 1px var(--border-insta) solid;
+  background-position-x: -50px;
+  background-position-y: center;
+}
+
+.link-insta:hover {
+  background: #e20c70 url("https://static.cdninstagram.com/rsrc.php/v3/y0/r/1RQf-TYXzi3.png") no-repeat;
+  border: 0 transparent solid;
+  background-size: contain;
+  background-position-y: center;
+}
+
+.link-twitter {
+  background: url("https://abs.twimg.com/responsive-web/client-web/icon-ios.b1fc7278.png") no-repeat;
+  background: var(--bg-tt);
+  color: #EDF2FF;
+  border: 1px var(--border-tt) solid;
+  background-position-x: -50px;
+  background-position-y: center;
+}
+
+.link-twitter:hover {
+  background: #00a2ed url("https://abs.twimg.com/responsive-web/client-web/icon-ios.b1fc7278.png") no-repeat;
+  border: 0 transparent solid;
+  background-size: contain;
+  background-position-y: center;
+}
+
+.link-github {
+  background: url("https://github.githubassets.com/pinned-octocat.svg") no-repeat;
+  background: var(--bg-github);
+  color: var(--text-github);
+  border: 1px var(--border-github) solid;
+  filter: invert();
+  background-position-x: -50px;
+  background-position-y: center;
+}
+
+.link-github:hover {
+  background: #FFF url("https://github.githubassets.com/pinned-octocat.svg") no-repeat;
+  color: var(--text-github);
+  border: 0 transparent solid;
+  filter: invert();
+  background-size: contain;
+  background-position-y: center;
+}
+
+footer {
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 0.6;
+  transform: opacity 400ms;
+}
+
+footer:hover {
+  opacity: 1;
+}
+
+footer a {
+  color: var(--text-color);
+}
+
+@media screen and (max-width: 420px) {
   .link-youtube {
-    background: var(--bg-yt);
-    color: #EDF2FF;
-    border: 1px var(--border-yt) solid;
-    background-position-x: -50px;
-    background-position-y: center;
-  }
-  .link-youtube:hover {
     background: red url("https://www.youtube.com/s/desktop/1422277c/img/favicon_96x96.png") no-repeat;
     border: 0 transparent solid;
     background-size: contain;
     background-position-y: center;
   }
-  
   .link-insta {
-    background: var(--bg-insta);
-    color: #EDF2FF;
-    border: 1px var(--border-insta) solid;
-    background-position-x: -50px;
-    background-position-y: center;
-  }
-  .link-insta:hover {
-    background: #e20c70 url("https://static.cdninstagram.com/rsrc.php/v3/y0/r/1RQf-TYXzi3.png") no-repeat;
+    background: var(--bg-insta) url("https://static.cdninstagram.com/rsrc.php/v3/y0/r/1RQf-TYXzi3.png") no-repeat;
     border: 0 transparent solid;
     background-size: contain;
     background-position-y: center;
   }
-  
   .link-twitter {
-    background: var(--bg-tt);
-    color: #EDF2FF;
-    border: 1px var(--border-tt) solid;
-    background-position-x: -50px;
-    background-position-y: center;
-  }
-  .link-twitter:hover {
     background: #00a2ed url("https://abs.twimg.com/responsive-web/client-web/icon-ios.b1fc7278.png") no-repeat;
     border: 0 transparent solid;
     background-size: contain;
     background-position-y: center;
   }
-  
   .link-github {
-    background: var(--bg-github) ;
-    color: var(--text-github);
-    border: 1px var(--border-github) solid;
-    filter: invert();
-    background-position-x: -50px;
-    background-position-y: center;
-  }
-  .link-github:hover {
     background: #FFF url("https://github.githubassets.com/pinned-octocat.svg") no-repeat;
     color: var(--text-github);
     border: 0 transparent solid;
@@ -229,18 +284,4 @@
     background-size: contain;
     background-position-y: center;
   }
-  
-  footer {
-    font-weight: 500;
-    font-size: 12px;
-    opacity: 0.6;
-    transform: opacity 400ms;
-  }
-  
-  footer:hover {
-    opacity: 1;
-  }
-  
-  footer a {
-    color: var(--text-color);
-  }
+}
